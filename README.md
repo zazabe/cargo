@@ -38,16 +38,16 @@ The solution is based on python, built around a command line tool.
 I focused on providing a solution within 3 hours, without wasting time in managing HTTP request 
 for a REST API or defining a database model, which is not required to solve this problem.
 
-# Installation
+## Installation
 
-## Requirements
+### Requirements
 
 - python, >=2.7
 - pip package manager, >=7.0.3
 
-## Source
+### Source
 
-## Setup
+### Setup
 
 - for production  
   `pip install https://github.com/zazabe/cargo/archive/master.zip`
@@ -64,11 +64,11 @@ Notes:
 - to run unit tests, you must at least clone the repository and run tests from the root of the repo.
 
 
-# Usage
+## Usage
 
 The command support a `--help` option for each sub-command.
 
-## Get direct friends of a person
+### Get direct friends of a person
 
 ```
 cargo social <JSON_DATA_FILE> direct <PERSON_ID>
@@ -79,7 +79,7 @@ $ cargo social tests/fixtures.json direct 2
 - Ben O'Carolan
 ```
 
-## Get people with a 2 steps relation with a person
+### Get people with a 2 steps relation with a person
 
 ```
 cargo social <JSON_DATA_FILE> steps <PERSON_ID> --steps [NB_STEPS] (default: 2)
@@ -92,7 +92,7 @@ $ cargo social tests/fixtures.json steps 2
 - Sarah Lane
 ```
 
-## Suggestion people with at least 2 common friends for a person
+### Suggest people with at least 2 common friends for a person
 
 ```
 cargo social <JSON_DATA_FILE> suggest <PERSON_ID>
@@ -102,7 +102,7 @@ $ cargo social tests/fixtures.json suggest 5
 - Katy Couch
 ```
 
-# Tests
+## Tests
 
 [![Build Status](https://travis-ci.org/zazabe/cargo.png?branch=master)](https://travis-ci.org/zazabe/cargo)
 
