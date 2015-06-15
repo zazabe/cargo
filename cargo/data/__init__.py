@@ -134,9 +134,8 @@ class Person(dict):
 
     def friends_level(self, level):
         """
-        Retrieve people with a given number set to reach them
+        Retrieve people with a given number of step to reach them
         """
-
         friends = self['friends']
         current_level = 1
         while current_level < level:

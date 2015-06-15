@@ -45,8 +45,6 @@ for a REST API or defining a database model, which is not required to solve this
 - python, >=2.7
 - pip package manager, >=7.0.3
 
-### Source
-
 ### Setup
 
 - for production  
