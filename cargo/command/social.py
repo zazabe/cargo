@@ -47,7 +47,7 @@ def steps(people, person_id, steps):
     log = logging.getLogger('social')
 
     person = people.get(person_id)
-    relation = person.friends_level(steps)
+    relation = person.friends_level(steps).exclude(person['friends'])
 
     log.info('%s relation with %s steps for %s',
              len(relation), steps, person.fullname())
