@@ -54,11 +54,10 @@ class TestSocial():
         person = people.get(2)
         friends = person.friends_level(2)
 
-        assert len(friends) == 4
-        assert friends[0].fullname() == 'Rob Fitz'
-        assert friends[1].fullname() == 'Victor'
-        assert friends[2].fullname() == 'Peter Mac'
-        assert friends[3].fullname() == 'Sarah Lane'
+        assert len(friends) == 3
+        assert friends[0].fullname() == 'Victor'
+        assert friends[1].fullname() == 'Peter Mac'
+        assert friends[2].fullname() == 'Sarah Lane'
 
     def test_friend_suggestion(self, data):
         """

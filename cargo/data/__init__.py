@@ -43,6 +43,7 @@ class People(list):
         for person in self:
             if person['friends'].get(person_id):
                 people.append(person)
+        people.remove(person)
         return people
 
     def suggestion(self, person_id):
@@ -144,4 +145,5 @@ class Person(dict):
                 current_friends += friend['friends']
             friends = current_friends
             current_level += 1
+        friends.remove(self)
         return friends
