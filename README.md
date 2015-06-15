@@ -83,8 +83,7 @@ $ cargo social tests/fixtures.json direct 2
 cargo social <JSON_DATA_FILE> steps <PERSON_ID> --steps [NB_STEPS] (default: 2)
 
 $ cargo social tests/fixtures.json steps 2
-4 relation with 2 steps for Rob Fitz
-- Rob Fitz
+3 relation with 2 steps for Rob Fitz
 - Victor
 - Peter Mac
 - Sarah Lane
