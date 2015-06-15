@@ -18,7 +18,8 @@ A JSON file with the following structure:
     ]
   },
   ...
-]```
+]
+```
 
 Link between friends consist in an adjacency list of ids, defined with the `friends` attribute.
 
@@ -49,11 +50,11 @@ for a REST API or defining a database model, which is not required to solve this
 ## Setup
 
 - for production  
-  `pip install `
+  `pip install https://github.com/zazabe/cargo/archive/master.zip`
 
 - for development   
   ```
-  git clone git@github.com:zazabe/cargo.tar.gz /opt/source/cargo
+  git clone https://github.com/zazabe/cargo.git /opt/source/cargo
   cd /opt/source/cargo 
   pip install -e .
   ```
@@ -103,6 +104,8 @@ $ cargo social tests/fixtures.json suggest 5
 
 # Tests
 
+[![Build Status](https://travis-ci.org/zazabe/cargo.png?branch=master)](https://travis-ci.org/zazabe/cargo)
+
 [Unit tests][test_source] are written with [py.test][py_test], you must clone the source code to have all required files (fixtures, etc...) and run test properly.
 
 Run all tests (at the root of the repository folder):
@@ -110,9 +113,9 @@ Run all tests (at the root of the repository folder):
 $ py.test tests/social.py
 ```
 
-Additionnally, tests are run by [Travis CI][travis] at every commit.
+Additionally, tests are run by [Travis CI][travis] at every commit.
 
 
   [py_test]: http://pytest.org/latest/
-  [test_source]: 
+  [test_source]: https://github.com/zazabe/cargo/blob/master/tests/social.py
   [travis]: https://travis-ci.org/
