@@ -5,8 +5,6 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
-  - "nightly"
-# command to install dependencies
 install:
   - "pip install ."
-script: py.test tests/social.py
+script: py.test -v tests/social.py
