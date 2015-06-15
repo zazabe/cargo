@@ -17,7 +17,7 @@ def cargo(ctx, debug):
     Cargo global command
     """
     level = debug and logging.DEBUG or logging.INFO
-    logging.basicConfig(level=level)
+    logging.basicConfig(level=level, format='%(message)s')
 
     ctx.obj = {
         'people': People()
